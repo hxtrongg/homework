@@ -1,0 +1,31 @@
+
+.header>h1 {
+    margin-bottom: 50px;
+    font-size: 32px;
+    color: #111;
+}
+
+ ul>li{
+    color: #333;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+a:hover {
+    color:#06f;
+}
+
+a {
+    color: red;
+}
+
+li:first-child {
+    color: blue;
+}
+li:last-child {
+    color: red;
+}
+li:nth-child(2n+2) {
+    background-color: #f80;
+}
+
