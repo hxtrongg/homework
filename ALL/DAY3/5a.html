@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            outline: 0;
+        }
+        .container{
+            width: 400px;
+            overflow-x: hidden;
+        }
+        article {
+            overflow: hidden;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+        }
+        article .content {
+            margin-top: 15px;
+            display: flex;
+        }
+        article .content .thumbnail{
+            /* display: inline-block;
+            float: left; */
+            width: 40%;
+        }
+        article .content .thumbnail img{
+            width: 100%;
+            height: auto;
+        }
+        article .content .description{
+            /* display: inline-block;
+            float: right; */
+            width: 60%;
+            padding-left: 15px;
+        }
+
+
+        /* first article */
+        article:first-child .thumbnail {
+            margin-bottom: -5px;
+        }
+        article:first-child .thumbnail img{
+            width: 100%;
+            height: auto;
+        }
+        article:first-child .title{
+            background-color: #f80;
+            color: #fff;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <article>
+            <div class="thumbnail">
+                <img src="https://i1-sohoa.vnecdn.net/2014/09/24/IMG-1773-1411122931-660x0-7399-1411544450.jpg?w=680&h=0&q=100&dpr=1&fit=crop&s=LzF5nd2wWPTnq6xF807IYA" alt="">
+            </div>
+            <h3 class="title">8 thế hệ Iphone độ camera</h3>
+        </article>
+        <article>
+            <h3 class="title">So sánh ảnh chụp từ camera iPhone 6 và 5S</h3>
+            <div class="content">
+                <div class="thumbnail">
+                    <img src="https://cdn.tgdd.vn/Products/Images/42/92962/iphone-6-32gb-gold-hh-600x600-600x600-600x600.jpg" alt="">
+                </div>
+                <div class="description">
+                    Cùng 8 megapixel nhưng với cảm biến mới có kích thước điểm ảnh lớn hơn và ống kính hỗ trợ chống rung kỹ thuật, chất lượng ảnh chụp từ iPhone 6 nhỉnh hơn 5S.
+                </div>
+            </div>
+        </article>
+        <article>
+            <h3 class="title">Điện thoại iPhone 14 128GB</h3>
+            <div class="content">
+                <div class="thumbnail">
+                    <img src="https://cdn.tgdd.vn/Products/Images/1363/292623/mieng-dan-lung-iphone-14-ta-thumb-600x600.jpg" alt="">
+                </div>
+                <div class="description">
+                    iPhone 14 128GB được xem là mẫu smartphone bùng nổ của nhà táo trong năm 2022, ấn tượng với ngoại hình trẻ trung, màn hình chất lượng đi kèm với những cải tiến về hệ điều hành và thuật toán xử lý hình ảnh.
+            </div>
+        </article>
+    </div>
+</body>
+</html>
