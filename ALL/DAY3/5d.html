@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>TRONG HOANG</title>
+  <style>
+    *{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .container {
+      width: 1000px;
+      height: 100vh;
+      margin: 0 auto;
+      /* background-color: aquamarine; */
+    }
+
+    .row-header {
+      display: flex;
+      height: 120px;
+      background-color: blue;
+
+    }
+
+    .row-title {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 120px;
+      background-color: violet;
+
+    }
+
+    .row-content {
+      display: flex;
+    }
+
+    .column-left {
+      flex: 1;
+      display: flex;
+      min-height: 120px;
+      background-color: black;
+      align-items: flex-end;
+      color: white;
+    }
+
+    .column-right {
+      display: flex;
+      flex: 3;
+      height: 120px;
+      background-color: white;
+    }
+
+    .column-left>h1 {
+      margin-left: 12px;
+      font-size: 24px;
+    }
+
+    .row-title>h2 {
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-left: 60px;
+      text-transform: uppercase;
+      letter-spacing: 10px;
+      font-size: 54px;
+    }
+
+    .row-title>span {
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-left: 60px;
+      text-transform: uppercase;
+      letter-spacing: 8px;
+    }
+
+    .column-left-container {
+      padding: 24px;
+    }
+
+    .column-right-container {
+      display: flex;
+      flex-direction: column;
+      padding: 24px;
+    }
+
+    .job {
+      display: flex;
+      flex: 1;
+      align-items: flex-start;
+    }
+
+
+    .job-time {
+      flex: 1;
+      font-weight: 700;
+      white-space: nowrap;
+      margin-right: 30px;
+    }
+
+    .job-description {
+      flex: 3;
+      margin-bottom: 30px;
+    }
+    .flex{
+      display: flex;
+      /* padding: 5px 0px; */
+    }
+    .skill_name {
+      width: 120px;
+    }
+    .sill_levels {
+      height: 20px;
+      flex: 1;
+    }
+    .skill_percent {
+      background-color: #111;
+    }
+    .skill_empty {
+      background-color: #c7c4c4;
+      flex: 1
+    }
+    .profile {
+        font-weight: 300;
+        font-size: 35px;
+    }
+    .tile {
+        line-height: 5px;
+    }
+    .tile>h3,
+    .tile>h4 {
+        color: #d9d3d3;
+        margin-top: 10px;
+    }
+    .hobbies {
+        line-height: 30px;
+        margin: -15px -30px;
+    }
+    .hobbies>li {
+       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+       list-style-type: none;
+    }
+  </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="row-header">
+                <div class="column-left">
+                <h1>RESUME</h1>
+                </div>
+                <div class="column-right"></div>
+            </div>
+            <div class="row-title">
+                <h2>TRONG HOANG</h2>
+                <span>Graphic Designer</span>
+            </div>
+        </header>
+
+        <section>
+            <div class="row-content">
+                <div class="column-left">
+                    <div class="column-left-container">
+                        <img src="http://xiteena10.wap.sh/images/trng.jpg" width="100%" />
+                        <h3 class="profile">PROFILE</h3>
+                        <!-- NAME -->
+                        <section>
+                            <h3>
+                            <strong>Name</strong>
+                            </h3>
+                            <em>TRONG HOANG XUAN</em>
+                        </section>
+                        <!-- DATE OF BIRTH -->
+                        <section>
+                            <h3>
+                            <strong>Date of Birth</strong>
+                            </h3>
+                            <em>10/10/1994</em>
+                        </section>
+                        <!-- EMAIL -->
+                        <section>
+                            <h3>
+                            <strong>Email</strong>
+                            </h3>
+                            <em>hxtrongg@gmail.com</em>
+                        </section>
+                        <!-- Telephone -->
+                        <section>
+                            <h3>
+                            <strong>Phone</strong>
+                            </h3>
+                            <em>0968.68.68.68</em>
+                        </section>
+                        <!-- WEB -->
+                        <section>
+                            <h3>
+                            <strong>Web</strong>
+                            </h3>
+                            <em>https://tronghoang.net</em>
+                        </section>
+                        <h3 class="profile">HOBBIES</h3>
+                        <ul class="hobbies">
+                            <li><i class="fa-solid fa-star"></i> Dance</li>
+                            <li><i class="fa-solid fa-star"></i> Read Book</li>
+                            <li><i class="fa-solid fa-star"></i> Swimming</li>
+                        </ul>
+                      
+                    </div>
+                </div>
+                    
+                <div class="column-right">
+                    <div class="column-right-container">
+                        <h2>JOB EXPERIENCES</h2>
+                        <div class="job">
+                            <div class="job-time">
+                                2015-2016
+                            </div>
+                            <div class="describe">
+                                <div class="tile">
+                                    <h3>COMPANY NAME 1</h3>
+                                    <h4>Position held</h4>
+                                </div>
+                                <div class="job-description">
+                                    Làm ở công ty cổ phần Softech
+                                </div>
+                            </div>
+                        </div>
+                        <div class="job">
+                            <div class="job-time">
+                                2017-2019
+                            </div>
+                            <div class="describe">
+                                <div class="tile">
+                                    <h3>COMPANY NAME 1</h3>
+                                    <h4>Position held</h4>
+                                </div>
+                                <div class="job-description">
+                                    Làm ở công ty cổ phần Softech
+                                </div>
+                            </div>
+                        </div>
+                        <div class="job">
+                            <div class="job-time">
+                                2020-2022
+                            </div>
+                            <div class="describe">
+                                <div class="tile">
+                                    <h3>COMPANY NAME 1</h3>
+                                    <h4>Position held</h4>
+                                </div>
+                                <div class="job-description">
+                                    Làm ở công ty cổ phần Softech
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h2>EDUCATION</h2>
+                        <div class="job">
+                            <div class="job-time">
+                                2015-2016
+                            </div>
+                            <div class="describe">
+                                <div class="tile">
+                                    <h3>COMPANY NAME 1</h3>
+                                    <h4>Position held</h4>
+                                </div>
+                                <div class="job-description">
+                                    Làm ở công ty cổ phần Softech
+                                </div>
+                            </div>
+                        </div>    
+                        
+                            <h2>SKILLS</h2>
+                            <div class="skill_wrapper flex">
+                                <div class="skill_name">
+                                <label>Photoshop</label>
+                                </div>
+                                <div class="sill_levels flex">
+                                    <div class="skill_percent" style="width: 80%;"></div>
+                                    <div class="skill_empty"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill_wrapper flex">
+                                <div class="skill_name">
+                                <label>Team work</label>
+                                </div>
+                                <div class="sill_levels flex">
+                                    <div class="skill_percent" style="width: 78%;"></div>
+                                    <div class="skill_empty"></div>
+                                </div>
+                            </div>
+
+                            <h2>PERSONA SKILLS</h2>
+                            <div class="skill_wrapper flex">
+                                <div class="skill_name">
+                                <label>Git</label>
+                                </div>
+                                <div class="sill_levels flex">
+                                    <div class="skill_percent" style="width: 50%;"></div>
+                                    <div class="skill_empty"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill_wrapper flex">
+                                <div class="skill_name">
+                                <label>HTML (5)</label>
+                                </div>
+                                <div class="sill_levels flex">
+                                    <div class="skill_percent" style="width: 67%;"></div>
+                                    <div class="skill_empty"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill_wrapper flex">
+                                <div class="skill_name">
+                                <label>CSS (3)</label>
+                                </div>
+                                <div class="sill_levels flex">
+                                    <div class="skill_percent" style="width: 88%;"></div>
+                                    <div class="skill_empty"></div>
+                                </div>
+                            </div>
+
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
