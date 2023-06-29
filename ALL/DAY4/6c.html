@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            padding-top: 20px;
+            padding-left: 80px;
+        }
+        body>.box {
+            width: 1000px;
+            height: 70px;
+            align-items: center;
+        }
+        .box {
+            display: flex;
+            border: 1px solid #d5d3d3;
+        }
+        .box1 {
+            display: flex;
+        }
+
+        .text {
+            padding-right: 33px;
+        }
+        .text:last-child{
+            border-right: 1px solid #d5d3d3
+        }
+        .border:last-child {
+            border-right: none;
+        }
+        .icoin {
+            font-size: 30px;
+            margin-left: 40px;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box1">
+            <div class="icoin">
+                <i class="fa-solid fa-rocket"></i>
+            </div>
+            <div class="text">
+                <strong>FREESHIPPING & RETURN</strong>
+                <p>Freeshipping on all orders 99$.</p>
+            </div>
+        </div>
+
+        <div class="box1">
+            <div class="icoin">
+                <i class="fa-solid fa-rocket"></i>
+            </div>
+            <div class="text">
+                <strong>FREESHIPPING & RETURN</strong>
+                <p>Freeshipping on all orders 99$.</p>
+            </div>
+        </div>
+
+        <div class="box1">
+            <div class="icoin">
+                <i class="fa-solid fa-rocket"></i>
+            </div>
+            <div class="text border">
+                <strong>FREESHIPPING & RETURN</strong>
+                <p>Freeshipping on all orders 99$.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
