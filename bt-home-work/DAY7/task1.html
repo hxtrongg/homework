@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // Nhập vào một số gọi là điểm trung bình của 1 học sinh. Sau đó in ra màn hình xếp loại học tập của học sinh đó theo quy tắc sau:
+
+        // - >= 9.0 là XUẤT SẮC
+        // - 9 < điểm <= 8 là GIỎI
+        // - 8 < điểm <= 6.5 là KHÁ
+        // - 6.5 < điểm <= 5.0 là TRUNG BÌNH
+        // - Còn lại là YẾU
+
+        let dtb = prompt(' Điểm trung bình của bạn là ?');
+        if (dtb >= 9.0) {
+            console.log('XUẤT SẮC');
+        }else if (dtb > 8.0) {
+            console.log('GIỎI');
+        }else if (dtb > 6.5) {
+            console.log('KHÁ');
+        }else if (dtb > 5.0) {
+            console.log('TRUNG BÌNH');
+        }else {
+            console.log('YẾU');
+        }
+    </script>
+</body>
+</html>

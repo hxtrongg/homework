@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+// Nhập vào một số gọi là tháng trong năm. Sau đó in ra màn hình tên tháng đó theo quy tắc (Dùng 02 cách: if-else if và switch):
+
+// 1, 2, 3: XUAN
+// 4, 5, 6: HA
+// 7, 8, 9: THU
+// 10, 11, 12: DONG
+
+    // Cách 1
+
+    // let month =parseInt( prompt('Nhập vào một số gọi là tháng trong năm. '));
+    
+    // if (month === 1 || month === 2 || month === 3) {
+    //     console.log('XUAN');
+    // }else if (month === 4 || month === 5 || month === 6) {
+    //     console.log('HA');
+    // }else if (month === 7 || month === 8 || month === 9) {
+    //     console.log('THU');
+    // }else if (month === 10 || month === 11 || month === 12) {
+    //     console.log('DONG');
+    // }else {
+    //     console.log('Ngay khong hop le');
+    // }
+
+    //Cách 2
+
+    let months = parseInt(prompt('Nhập vào một số gọi là tháng trong năm.'));
+
+    switch(months) {
+        case 1:
+        case 2:
+        case 3:
+            console.log("XUAN");
+            break;
+        case 4:
+        case 5:
+        case 6:
+        console.log("HA");
+            break;
+        case 7:
+        case 8:
+        case 9:
+        console.log("THU");
+            break;
+        case 10:
+        case 11:
+        case 12:
+        console.log("DONG");
+            break;
+        default:
+        console.log("NGÀY KHÔNG HỢP LỆ");
+            break;
+    }
+
+</script>
+</body>
+</html>
