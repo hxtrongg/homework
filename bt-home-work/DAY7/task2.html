@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Viết chương trình nhập vào số chữ điện dung trong một tháng của một hộ gia đình và tính số tiền hộ gia đình đó phải trả cho nhà máy điện theo qui định hiện nay của nghành điện như sau:
+
+        // - Nếu chữ điện từ 100 trở xuống thì số tiền phải trả là 550 đồng/chữ.
+        // - 50 chữ điện tiếp theo giá 900 đồng/chữ
+        // - 50 chữ tiếp theo giá 1210 đồng/ chữ
+        // - 100 chữ điện tiếp theo giá 1340 đồng/ chữ
+        // - Từ chữ thứ 301 trở đi gia 1400 đồng/ chữ
+
+        // Nhập số chữ điện trong một tháng của hộ gia đình
+let soChuDien = parseInt(prompt("Nhập số chữ điện trong một tháng của hộ gia đình:"));
+
+// Tính số tiền hộ gia đình phải trả cho nhà máy điện
+let soTien = 0; // Biến lưu số tiền
+
+if (soChuDien <= 100) {
+  soTien = soChuDien * 550;
+} else if (soChuDien <= 150) {
+  soTien = 100 * 550 + (soChuDien - 100) * 900;
+} else if (soChuDien <= 200) {
+  soTien = 100 * 550 + 50 * 900 + (soChuDien - 150) * 1210;
+} else if (soChuDien <= 300) {
+  soTien = 100 * 550 + 50 * 900 + 50 * 1210 + (soChuDien - 200) * 1340;
+} else {
+  soTien = 100 * 550 + 50 * 900 + 50 * 1210 + 100 * 1340 + (soChuDien - 300) * 1400;
+}
+
+console.log("Số tiền hộ gia đình phải trả cho nhà máy điện: " + soTien + " đồng");
+
+
+    </script>
+</body>
+</html>
