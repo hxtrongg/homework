@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .list-media{
+            background-color: #fff;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .medias{
+            margin-right: 25px;
+        }
+
+        .medias>img{
+            border-radius: 10px;
+            transition: all 0.5s;
+        }
+
+        .medias>h3{
+            white-space: inherit; 
+            width: 310px;
+            overflow: hidden;
+            /* text-overflow: ellipsis; */
+        }
+
+        .medias:hover {
+            border: 1px solid #f80;
+            cursor: pointer;
+            transform: translateY(-.0625rem);
+            border-radius: 10px;
+        }
+
+        .price>h6{
+            color: #f80;
+            font-weight: 400;
+            opacity: 0.8;
+            font-size: 15px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="list-media">
+        <div class="medias">
+          <img src="https://cdn.tgdd.vn/Files/2023/07/06/1537194/sukien_galaxys22ultra_1-060723-182733-300x200.jpg" alt="">
+            <h3> 
+            Đón chờ sự kiện đặc biệt mua Galaxy S22 Ultra với giá chỉ 7.7 triệu đồng vào ngày 7/7
+            </h3>
+          <div class="price">
+            <h6>114k View</h6>
+          </div>
+        </div>
+
+        <div class="medias">
+          <img src="https://cdn.tgdd.vn/Files/2023/07/06/1537198/tancongmang_1-060723-184546-300x200.jpg" alt="">
+          <h3>
+            Hơn 6.300 sự cố tấn công mạng ghi nhận tại Việt Nam trong 6 tháng đầu năm 2023
+            </h3>
+          <div class="price">
+            <h6>114k View</h6>
+          </div>
+        </div>
+
+        <div class="medias">
+          <img src="https://cdn.tgdd.vn/Files/2023/07/05/1537085/iphone12promax1-060723-004109-300x200.jpg" alt="">
+          <h3>           
+              Trên tay Nubia Red Magic 8S Pro+: Smartphone đầu tiên trên thế giới có RAM 24 GB, giá chỉ từ 18 triệu
+            </h3>
+          <div class="price">
+            <h6>114k View</h6>
+          </div>
+        </div>
+
+        <div class="medias">
+          <img src="https://cdn.tgdd.vn/Files/2023/07/06/1537150/galaxytaba82022-411111-060723-124918-300x200.jpg" alt="">
+          <h3>
+            Tất tần tật máy tính bảng Samsung khuyến mãi tháng 7, tặng bao da miễn phí
+            </h3>
+          <div class="price">
+            <h6>114k View</h6>
+          </div>
+        </div>
+    </div>
+</body>
+</html>
