@@ -6,36 +6,175 @@
   <title>Document</title>
   <style>
     *{
-      margin: 0;
-      padding: 0;
       box-sizing: border-box;
     }
-    body{
-      width: 1000px;
-      height: 200px;
-      border: 1px solid #f000;
-      background-color: #87f3f3;
+    .list-media{
+      background-color:#ff685f ;
+      padding: 15px;
+      display: flex;
+      flex-wrap: wrap;
     }
-    .box {
-      
-      
+    .medias{
+      position: relative;
+      background-color: #ffffff;
+      width: 250px;
+      margin-right: 15px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      transition-duration: 300ms;
+      transition-timing-function: ease-in-out;
+      transition-delay: 0s;
+      transition-property: all;
     }
+
+    .medias:hover {
+      color: #0084ff;
+      cursor: pointer;
+      transform: translateY(-.0625rem);
+    }
+    .medias>img {
+      /* width: 250px; */
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    .medias>p {
+      white-space: nowrap; 
+      width: 240px; 
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    
+    .price{
+      color: #ff0d00;
+      font-weight: 700;
+      font-size: 20px;
+    }
+    .tragop{
+      position: absolute;
+      background-color: #f1f1f1;
+      color: #333;
+      height: 23px;
+      width: 65px;
+      top: 10px;
+      left: 10px;
+      border-radius: 5px;
+    }
+    .tragop>span {
+      border-radius: 2px;
+      font-size: 11px;
+      line-height: 12px;
+      display: inline-block;
+      margin-right: 4px;
+      padding: 3px;
+    }
+
+    .medias>p,
+    .price>p {
+      margin-left: 10px;
+    }
+
+    .price{
+      display: flex;
+      align-items: center;
+    }
+
+    .price>span{
+      text-decoration-line: line-through ;
+      font-size: 20px;
+      font-weight: 300;
+      color: #333;
+      opacity: 0.6;
+    }
+    
 
   </style>
 </head>
 <body>
-  <div class="box">
-    <div class="clum">
-          <div class="image">
+  <div class="list-media">
+    <div class="medias">
+      <div class="tragop">
+        <span>Trả góp 0%</span>
+      </div>
+      <img src="https://cdn.tgdd.vn/Products/Images/9499/113120/bo-adapter-sac-kem-cap-micro-samsung-ta20hw-thumb-600x600.jpeg" alt="">
+      <p>
+        Sạc kèm cáp Micro Samsung TA20HW
+    </p>
+      <div class="price">
+        <p>20.000.000đ</p>
+      </div>
+    </div>
 
-          </div>
-          <div class="tile">
+    <div class="medias">
+      
+      <img src="https://cdn.tgdd.vn/Products/Images/58/259283/cap-type-c-lightning-1m-apple-mm0a3-trang-thumb-1-600x600.jpeg" alt="">
+      <p>  Cáp Type C - Lightning 1m Apple MM0A3</p>
+      <div class="price">
+        <p>150.000đ</p>
+        <span>500.000đ</span>
+      </div>
+    </div>
 
+    <div class="medias">
+      <div class="tragop">
+        <span>Trả góp 0%</span>
+      </div>
+      <img src="https://cdn.tgdd.vn/Products/Images/58/303317/cap-type-c-1m-belkin-cab002-den-thumb-600x600.jpg" alt="">
+      <p> Cáp Type C 1m Belkin CAB002</p>
+      <div class="price">
+        <p>20.000.000đ</p>
+      </div>
+    </div>
 
-          </div>
-          <div class="price">
+    <div class="medias">
+      <div class="tragop">
+        <span>Trả góp 0%</span>
+      </div>
+      <img src="https://cdn.tgdd.vn/Products/Images/9499/230315/adapter-sac-type-c-20w-cho-iphone-ipad-apple-mhje3-avatar-1-1-600x600.jpg" alt="">
+      <p>
+        Sạc Apple 20W MHJE3
+    </p>
+      <div class="price">
+        <p>20.000.000đ</p>
+      </div>
+    </div>
 
-          </div>
+    <div class="medias">
+      <div class="tragop">
+        <span>Trả góp 0%</span>
+      </div>
+      <img src="https://cdn.tgdd.vn/Products/Images/9499/245841/type-c-pd-25w-belkin-wca004-ava-600x600.jpg" alt="">
+      <p>
+        Sạc Belkin WCA004
+      </p>
+      <div class="price">
+        <p>20.000.000đ</p>
+        <span>50.000.000đ</span>
+      </div>
+    </div>
+
+    <div class="medias">
+      <div class="tragop">
+        <span>Trả góp 0%</span>
+      </div>
+      <img src="https://cdn.tgdd.vn/Products/Images/54/253802/bluetooth-airpods-pro-magsafe-charge-apple-mlwk3-0-1.jpg" alt="">
+      <p>Tai nghe Bluetooth AirPods Pro MagSafe Charge Apple MLWK3</p>
+      <div class="price">
+        <p>20.000.000đ</p>
+      </div>
+    </div>
+
+    <div class="medias">
+      <div class="tragop">
+        <span>Trả góp 0%</span>
+      </div>
+      <img src="https://cdn.tgdd.vn/Products/Images/54/253802/bluetooth-airpods-pro-magsafe-charge-apple-mlwk3-0-1.jpg" alt="">
+      <p>Tai nghe Bluetooth AirPods Pro MagSafe Charge Apple MLWK3</p>
+      <div class="price">
+        <p>20.000.000đ</p>
+        <span>50.000.000đ</span>
+      </div>
     </div>
   </div>
 </body>
