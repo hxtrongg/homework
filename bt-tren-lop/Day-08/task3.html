@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        function calculate(numA, numB, type) {
+  switch (type) {
+    case "add":
+      return numA + numB;
+    case "sub":
+      return numA - numB;
+    case "mul":
+      return numA * numB;
+    case "div":
+      return numA / numB;
+    default:
+      return NaN; // Giá trị mặc định nếu type không hợp lệ
+  }
+}
+
+// Ví dụ sử dụng
+var resultAdd = calculate(5, 3, "add"); // Kết quả của phép cộng 5 + 3
+console.log(resultAdd); // Output: 8
+
+var resultSub = calculate(8, 2, "sub"); // Kết quả của phép trừ 8 - 2
+console.log(resultSub); // Output: 6
+
+var resultMul = calculate(4, 6, "mul"); // Kết quả của phép nhân 4 * 6
+console.log(resultMul); // Output: 24
+
+var resultDiv = calculate(10, 2, "div"); // Kết quả của phép chia 10 / 2
+console.log(resultDiv); // Output: 5
+
+var resultInvalid = calculate(4, 3, "invalid"); // Kết quả với type không hợp lệ
+console.log(resultInvalid); // Output: NaN (Not a Number)
+
+
+    </script>
+</body>
+</html>

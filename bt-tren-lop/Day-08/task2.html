@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="number" name="a" id="inputA">
+    <input type="number" name="b" id="inputB">
+    <select name="op" id="selectOperator">
+      <option value="add">Cộng</option>
+      <option value="subtract">Trừ</option>
+      <option value="multiply">Nhân</option>
+      <option value="divide">Chia</option>
+      <option value="modulus">Chia lấy dư</option>
+    </select>
+    <button onclick="calculate()">Tính toán</button>
+    <div id="result"></div>
+    
+
+<script>
+function calculate() {
+  // Lấy giá trị của hai số và phép tính từ input và select
+  var numA = parseInt(document.getElementById("inputA").value);
+  var numB = parseInt(document.getElementById("inputB").value);
+  var operator = document.getElementById("selectOperator").value;
+  
+  // Kiểm tra nếu hai số là số hợp lệ
+  if (isNaN(numA) || isNaN(numB)) {
+    document.getElementById("result").textContent = "Vui lòng nhập số hợp lệ.";
+    return;
+  }
+  
+  // Tính toán dựa trên phép tính được chọn
+  var result;
+  switch (operator) {
+    case "add":
+      result = numA + numB;
+      break;
+    case "subtract":
+      result = numA - numB;
+      break;
+    case "multiply":
+      result = numA * numB;
+      break;
+    case "divide":
+      result = numA / numB;
+      break;
+    case "modulus":
+      result = numA % numB;
+      break;
+    default:
+      document.getElementById("result").textContent = "Phép tính không hợp lệ.";
+      return;
+  }
+  
+  // Hiển thị kết quả
+  document.getElementById("result").textContent = "Kết quả: " + result;
+}
+
+
+</script>
+
+</body>
+</html>

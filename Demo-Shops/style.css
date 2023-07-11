@@ -3,8 +3,11 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
+
+
+
 body {
-    color: #333333;
+    color: var( --black-color);
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     font-weight: 400;
@@ -12,7 +15,7 @@ body {
 }
 .header {
     width: 100%;
-    color: #333;
+    color: var(--green-color);
     position: relative;
     z-index: 999;
     -moz-box-shadow: 0px 0px 5px rgba(0,0,0,0.15);
@@ -22,7 +25,7 @@ body {
 .header-topbar {
     display: table;
     background-color: #fff;
-    color: #333;
+    color:var(--black-color);
     width: 100%;
     font-size: 12px;
     text-transform: uppercase;
@@ -104,7 +107,7 @@ body {
     box-shadow: 0px 0px 5px rgba(0,0,0, 0.05);
 }
 
-/* .dropdown-menu {
+.dropdown-menu {
     position: absolute;
     top: 100%;
     left: 0;
@@ -115,7 +118,7 @@ body {
     padding: 0.5rem 0;
     margin: 0.125rem 0 0;
     font-size: 1rem;
-    color: #292b2c;
+    color:var(--black-color);
     text-align: left;
     list-style: none;
     background-color: #fff;
@@ -123,7 +126,7 @@ body {
     background-clip: padding-box;
     border: 1px solid rgba(0, 0, 0, 0.15);
     border-radius: 0.25rem;
-} */
+}
 
 .dropdown-nav .dropdown-menu:before {
     background: rgba(0, 0, 0, 0.1) none repeat scroll 0 0;
@@ -172,7 +175,7 @@ ol ol, ol ul, ul ol, ul ul {
 a {
     cursor: pointer;
     text-decoration: none;
-    color: #333333;
+    color: var(--black-color);
     transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
     -webkit-transition: all 0.3s ease 0s;
@@ -190,5 +193,5 @@ a, area, button, [role="button"], input, label, select, summary, textarea {
 }
 
 a:hover, a.color, .color {
-    color: #34b79d;
+    color: var(--green-color);
 }
