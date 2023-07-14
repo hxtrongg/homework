@@ -1,1 +1,221 @@
 
+.navigation-menu ul > li > a > .nav-label-new,
+.navigation-menu ul > li > a > .nav-label-sale {
+    position: relative;
+    right: 0;
+}
+
+.navigation-menu ul > li > a > .nav-label-sale:after {
+    content: "";
+    display: block;
+    height: 20px;
+    position: absolute;
+    top: -19px;
+    width: 28px;
+    background: url(http://theme.nileforest.com/html/philos/img/label_sale.png) no-repeat left top;
+    z-index: 100;
+    right: -10px;
+}
+
+
+.navigation-menu ul, .navigation-menu ul li {
+    list-style: none;
+}
+
+.navigation-menu {
+    display: block;
+    float: left;
+    position: static;
+    text-transform: uppercase;
+}
+.navigation-menu > ul > li {
+    display: inline-block;
+}
+
+.navigation-menu ul > li > a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    padding: 29px 14px;
+    display: block;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #333333;
+    transition: all 0.3s ease 0s;
+}
+
+
+.header-container {
+    position: relative;
+    z-index: 99;
+    display: table;
+    width: 100%;
+    background: #fff;
+}
+
+
+
+.header-rightside-nav {
+    float: right;
+}
+
+.header-rightside-nav .header-btn-link {
+    border-right: 1px solid #eeeeee;
+    padding: 21px 30px 20px 0px;
+    display: inline-block;
+    vertical-align: top;
+    float: left;
+}
+
+.header-rightside-nav .header-btn-link a {
+    font-size: 13px;
+}
+.btn-color {
+    background-color: #34b79d;
+    border-color: transparent;
+    color: #fff !important;
+}
+
+.btn-sm {
+    padding: 13px 35px !important;
+    display: inline-block;
+}
+
+.btn-color:hover {
+    background-color: #4ac2aa;
+    border-color: transparent;
+    color: #fff !important;
+}
+
+.btn, button {
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 400;
+    font-family: "Montserrat",sans-serif;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    text-align: center;
+    outline: none;
+    border-width: 1px;
+    border-style: solid;
+    display: inline-block;
+    vertical-align: middle;
+    transition: all 0.3s ease 0s !important;
+    -moz-transition: all 0.3s ease 0s !important;
+    -webkit-transition: all 0.3s ease 0s !important;
+    -o-transition: all 0.3s ease 0s !important;
+    border-radius: 50px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+}
+
+ul.list-none-ib li, .list-none-ib {
+    display: inline-block;
+}
+.sidebar-icon-nav {
+    display: inline-block;
+    font-size: 18px;
+    margin-right: -12px;
+    margin-left: 15px;
+}
+
+.sidebar-icon-nav .cart-title {
+    font-size: 13px;
+}
+
+.sidebar-icon-nav .cart-icon,
+.sidebar-icon-nav .cart-title {
+    display: inline-block;
+}
+
+.sidebar-icon-nav ul li {
+    margin: 28px 11px 0px;
+}
+
+.sidebar-icon-nav ul li .countTip {
+    border-radius: 50px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    width: 18px;
+    height: 18px;
+    display: block;
+    position: absolute;
+    background: #34b79d;
+    right: 157px;
+    top: 20px;
+    text-align: center;
+    line-height: 18px;
+    font-size: 10px;
+    color: #fff;
+}
+
+.list-none-ib:hover li a i,
+.cart-icon:hover,
+.cart-title:hover span {
+    color: #333333; 
+}
+
+
+
+.header-container .logo a img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.header-container .logo {
+    display: inline-block;
+    float: left;
+    text-align: left;
+    margin-right: 28px;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+    border: none;
+    outline: none;
+}
+
+
+.header-container  .logo a {
+    /* margin-bottom: 26px; */
+    margin-top: 26px;
+    width: 120px;
+    display: block;
+}
+
+#baner-home{
+    position: relative;
+}
+
+#baner-home .owl-nav {
+    position: absolute;
+    top:45%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: 0; */
+}
+
+#baner-home .owl-nav .owl-prev,
+#baner-home .owl-nav .owl-next {
+   background-color: rgba(0, 0, 0, 0.05);
+   width: 60px;
+   height: 60px;
+   border-radius: 60px;
+}
+
+#baner-home .owl-nav .owl-prev span,
+#baner-home .owl-nav .owl-next span{
+    font-size: 40px;
+    color: #fff;
+}
+
+#baner-home .owl-nav .owl-prev:hover ,
+#baner-home .owl-nav .owl-next:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+ }

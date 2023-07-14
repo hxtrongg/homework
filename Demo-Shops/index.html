@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -100,17 +102,94 @@
                     <img src="http://theme.nileforest.com/html/philos/img/logo_black.png" alt="logo">
                     </a>
                 </div>
-                
+            
+
+                <div class="header-rightside-nav">
+                    <div class="header-btn-link hidden-lg-down">
+                        <a href="#" class="btn btn-sm btn-color">Buy Now</a>
+                    </div>
+
+                    <div class="sidebar-icon-nav">
+                        <ul class="list-none-ib">
+                            <li><a href="#">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a></li>
+                            <li><a href="#">
+                                <i class="fa-solid fa-heart"></i>
+                                <span class="countTip">10</span>
+                            </a></li>
+                            <li><a href="#">
+                                <div class="cart-icon">
+                                    <i class="fa-solid fa-cart-shopping"></i> 
+                                </div>
+                           
+                            </a>
+                            <div class="cart-title">
+                                <span>2</span>
+                                /
+                                <span>$999.00</span>
+                            </div> 
+                            </li>
+                        </ul>
+                    </div>              
+                </div>
+
+                <nav class="navigation-menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li class="menu-dropdown-icon">
+                            <a href="#">Man</a>
+                        </li>
+                        <li class="menu-dropdown-icon">
+                            <a href="">Women</a>
+                        </li>
+                        <li class="menu-dropdown-icon">
+                            <a href="#">Kids</a>
+                        </li>
+                        <li class="menu-dropdown-icon">
+                            <a href="#">Brand</a>
+                        </li>
+                        <li class="menu-dropdown-icon">
+                            <a href="#">
+                                Accessories
+                                <span class="nav-label-sale"></span>
+                            </a>
+                        </li>
+                        <li class="menu-dropdown-icon">
+                            <a href="#">Pages</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </header>
-       
+    <!-- wap-baner -->
+    <div class="owl-carousel owl-theme" id="baner-home">
+        <div class="item">
+            <img src="http://theme.nileforest.com/html/philos/img/slide-img/slide_bg1.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="http://theme.nileforest.com/html/philos/img/slide-img/slide_bg2.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="http://theme.nileforest.com/html/philos/img/slide-img/slide_bg3.jpg" alt="">
+        </div>
+    </div>
 
    
-   
-
-    <script src="js/bootstrap.bundle.min.js">
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $('#baner-home').owlCarousel({
+            loop:true,
+            items:1,
+            margin:10,
+            nav:true,
+            dots:false
+        })    
     </script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    
+
 </body>
 </html>
