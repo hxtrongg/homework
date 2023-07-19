@@ -1,0 +1,18 @@
+
+
+:root{
+    --white-color: #f8f9fa;
+    --blue-color: #3aafd6;
+    --bluehover-color: #18a7d6;
+}
+    .header{
+        background-color: var(--white-color);
+    }
+       .d-flex span {
+        background-color: var(--blue-color);
+       }
+       .btn:hover {
+        opacity: 1;
+        background-color: var(--bluehover-color);
+        color: var(--white-color);;
+}
