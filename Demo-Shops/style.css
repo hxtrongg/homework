@@ -67,7 +67,7 @@ a {
 }
 
 .header-rightside-nav .header-btn-link {
-    border-right: 1px solid var(--white-color);
+    border-right: 1px solid #eeeeee;
     padding: 21px 30px 20px 0px;
     display: inline-block;
     vertical-align: top;
@@ -500,4 +500,8 @@ input, input[type="text"], input[type="email"], input[type="tel"], input[type="n
 
 .copyrights a {
     color: var(--green-color);
+}
+
+.fixed-top{
+    background-color: rgba(255, 255, 255, 0.13);
 }
