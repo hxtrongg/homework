@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap demo</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Dosis:500,600" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,400i,600,700" rel="stylesheet">
+        <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400&display=swap" rel="stylesheet"> -->
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/main.css">
+    </head>
+  <body>
+    <header>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar navbar-expand-lg">
+                    <a class="navbar-brand" href="#">Essentials</a>
+                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse" id="navbarCollapse">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="curent">
+                                <a href="#home">Home</a>
+                            </li>
+                            <li>
+                                <a href="#about">About</a>
+                            </li>
+                            <li>
+                                <a href="#pricing">Pricing</a>
+                            </li>
+                            <li>
+                                <a href="#team">Team</a>
+                            </li>
+                            <li>
+                                <a href="#showcase">Showcase</a>
+                            </li>
+                            <li>
+                                <a href="#features">Features</a>
+                            </li>
+                            <li>
+                                <a href="#blog">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#contact">Contact</a>
+                            </li>
+                            <li class="discover-link">
+                                <a href="#contact" class="external discover-btn">Get Started</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="container">
+                <div class="row baner">
+                    <div class="col-6 baners">
+                        <h1>Welcome To Essentials, The Wold's Most Powerful SaaS Solution</h1>
+                            <p>Essentials is designed with your customers in mind, so you can
+                                track and analyze all your data in one central location. There are
+                                no limits to how you can look at your data.
+                            </p>
+                            <button type="button" class="btn btn-primary">
+                                <a href="#">Start Your Free Trail</a>
+                            </button>
+                    </div>
+                    <div class="col-6">
+                        <div class="photo">
+                            <img src="https://demo.epic-webdesign.com/tf-essentials/v1/images/website-development.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-gray">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2>Integrated solutions designed for small business</h2>
+                        <p>Communicate with flexible tools that go where your team goes.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="main-services">
+                            <img src="https://demo.epic-webdesign.com/tf-essentials/v1/images/main-service1.png" alt="">
+                            <h3>Designers</h3>
+                            <p>Curabitur quam etsum lacus netsum nulat iaculis ets
+                                 vitae etsum nisle varius sed aliquam ets vitae netsum.</p>
+                            <a href="#about">Essentials for Designers</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="main-services">
+                            <img src="https://demo.epic-webdesign.com/tf-essentials/v1/images/main-service2.png" alt="">
+                            <h3>Designers</h3>
+                            <p>Curabitur quam etsum lacus netsum nulat iaculis ets
+                                 vitae etsum nisle varius sed aliquam ets vitae netsum.</p>
+                            <a href="#about">Essentials for Designers</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="main-services">
+                            <img src="https://demo.epic-webdesign.com/tf-essentials/v1/images/main-service3.png" alt="">
+                            <h3>Designers</h3>
+                            <p>Curabitur quam etsum lacus netsum nulat iaculis ets
+                                 vitae etsum nisle varius sed aliquam ets vitae netsum.</p>
+                            <a href="#about">Essentials for Designers</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script>
+        $(window).scroll(function fix_element() {
+        $('.navbar-nav').css(
+        $(window).scrollTop() > 100
+            ? { 'position': 'fixed', 'top': '0', 'left': '0', 'right': '0', 'z-index': '9999', 'background': 'rgba(255,255,255,0.95)'}
+            : { 'position': 'relative', 'top': 'auto' }
+        );
+        return fix_element;
+         }());
+
+    </script>
+</body>
+</html>
